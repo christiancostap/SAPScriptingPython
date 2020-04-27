@@ -2,7 +2,6 @@ import win32com.client
 import subprocess
 import time
 
-
 class Connect:
     def __init__(self):
         self.process = None
@@ -85,3 +84,5 @@ class Connect:
 
     def disconnect(self):
         self.connection.CloseConnection()
+
+        
