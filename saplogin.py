@@ -74,7 +74,7 @@ class Connect:
             self.session[0].findById("wnd[1]").sendVKey(0)
 
     def new_session(self):
-        """Verifies the amount of sessions open, opens a new one and appends it to the pre existing sessions"""
+        """Verifies the amount of open session, opens a new one and appends it to the pre existing sessions"""
 
         open_sessions = len(self.connection.Children)
         self.session[0].createsession()
