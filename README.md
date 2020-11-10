@@ -1,2 +1,2 @@
 # sapguilogin
-My personal Code for login in SAP Netweaver with Python.
+My personal Code for logging in SAP Netweaver with Python.
