@@ -13,7 +13,7 @@ class Connect:
         self.application = None
         self.connection = None
         self.session = []
-        self.path = r"C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe"
+        self.path = r"***\SAP\FrontEnd\SAPgui\saplogon.exe"  # ***The full path should be placed here
         self.user = None
         self.password = None
         self.language = None
