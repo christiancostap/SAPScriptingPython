@@ -11,7 +11,7 @@ The code will open the SAP and then check whether the account is already logged 
 It will then generate a list of sessions (this list property is usually what you are going to work on from this point onward). If there was no preexisting connection, the code will create a single session that should be accessed using object.session[0]
 
 Usually from this point on the desirable code should come from recording manually made actions on SAP, then adapt to Python the VB code that SAP generates.
-If you need information that cannot be accessed by recording SAP scriptings, please download the API from the official website.
+If you need information that cannot be accessed by recording SAP scriptings, please download the API DOC from the official website.
 
 https://help.sap.com/doc/9215986e54174174854b0af6bb14305a/760.01/en-US/sap_gui_scripting_api_761.pdf
 
