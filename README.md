@@ -1,12 +1,12 @@
 # sapguilogin
 My personal Code for logging in and running Scripts in SAP Netweaver GUI with Python.
 
-If you want to use the code, you should change the following path to the path of your SAP logon file.
+If you want to use this code, you should change the following path to the path of your SAP logon file.
 //self.path = r"***\SAP\FrontEnd\SAPgui\saplogon.exe"
 
 The Connect class should be first instantiated and then you should pass the necessary parameters "user", "password", "language", "connection='PRD [R3 PRODUCCION]'". If no parameter is passed to the connection, it will try to connect to the PRD (not QA).
 
-The code will open the SAP and then check whether the account is already logged in or not. If the account isn't logged, it will initiate a new connection, otherwise, it will connect to the preexisting connection.
+The code will open SAP and then check whether the account is already logged in or not. If the account isn't logged, it will initiate a new connection, otherwise, it will connect to the preexisting connection.
 
 It will then generate a list of sessions (this list property is usually what you are going to work on from this point onward). If there was no preexisting connection, the code will create a single session that should be accessed using object.session[0]
 
