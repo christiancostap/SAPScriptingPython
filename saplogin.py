@@ -18,12 +18,13 @@ class Connect:
         self.password = None
         self.language = None
         self.connection = None
+        self.connect_to = None
 
-    def open_sap(self, user, password, language, connection='PRD [R3 PRODUCCION]'):
+    def open_sap(self, user, password, language, connect_to='PRD [R3 PRODUCCION]'):
         self.user = user
         self.password = password
         self.language = language
-        self.connection = connection  # Connects to PRD by default
+        self.connect_to = connect_to
         self.process = subprocess.Popen(self.path)
         time.sleep(4)  # time sleep so the computer has time to open SAP.
 
@@ -57,7 +58,7 @@ class Connect:
             return
 
     def login(self):
-        self.connection = self.application.Openconnection(self.connection, True)
+        self.connection = self.application.Openconnection(self.connect_to, True)
 
         if not type(self.connection) == win32com.client.CDispatch:
             self.application = None
@@ -100,6 +101,3 @@ class Connect:
                 self.session[session_num].findById("wnd[1]").sendVKey(0)
             except Exception:
                 break
-
-
-        
